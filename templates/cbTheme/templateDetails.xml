@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.1" type="template" client="site">
+	<name>Coding Booth</name>
+   	<author>carlospaiva</author>
+   	<creationDate>August 2013</creationDate>
+   	<copyright>Copyright (C) 2013 Coding Booth. All rights reserved.</copyright>
+   	<license>GNU General Public License version 2 or later;</license>
+   	<authorEmail>carlospaiva87@gmail.com</authorEmail>
+   	<authorUrl>http://codingbooth.com</authorUrl>
+   	<version>1.0.0</version>
+   	<description></description>
+	<files>
+		<filename>favicon.ico</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+	</files>
+	<positions>
+		<position>logo</position>
+		<position>menus</position>
+	    <position>banner</position>
+	    <position>content</position>
+	    <position>footer</position>
+	    <position>debug</position>
+	</positions>
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+			    <field name="logo" type="media"
+					label="Logo" />
+
+				<field name="sitetitle"  type="text" default=""
+					label="Title"
+					filter="string" />
+
+				<field name="sitedescription"  type="textarea" default=""
+					label="Description"
+					filter="string" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
