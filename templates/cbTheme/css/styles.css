@@ -9,13 +9,259 @@
 
 body {
 	background-color: #393939;
-
-	font-size: 18px;
+	font-family: Ubuntu;
+	font-size: 24px;
 	font-weight: 400;
 	color: #9c9c9c;
 }
 
+a {
+	text-decoration: none;
+	color: #ffa300;
+}
+
+div.body {
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.header {
+	max-width: 1180px;
+	height: 103px;
+	margin:auto;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	text-align: right;
+}
+
+div.grey {
+	background-color: #4d4d4d;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+a.logolink {
+	display: inline-block;
+	float: left;
+	margin-top: 13px;
+	max-width: 100%; 
+}
+
 img.logo {
-	max-width:100%; 
+	max-width: 100%; 
 	height:auto;
+	vertical-align: bottom;
+}
+
+div.social {
+	display: inline-block;
+	max-width: 140px;
+	height: 34px;
+	margin-bottom: 10px;
+	padding: 0;
+	float: right;
+}
+
+div.social p {
+	margin: 0;
+	padding: 0;
+}
+
+div.social img {
+	margin-right: 5px;
+}
+
+ul.menu {
+	width: 40%;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+}
+
+ul.menu li {
+	display: inline-block;
+	height: 34px;
+}
+
+ul.menu li a {
+	background-color: #202020;
+	display: inline-block;
+	line-height: 34px;
+	vertical-align: middle;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-right: 5px;
+	font-size: 20px;
+}
+
+ul.menu li.active a {
+	background-color: #ffa300;
+}
+
+/* Banner */
+
+div.banner img {
+	max-width: 100%;
+	height: auto;
+}
+
+div.item-page p, div.item-page h2, div.blog-featured p, div.blog-featured h2 {
+	max-width: 1180px;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+div.item-page h2 {
+	font-size: 24px;
+	color: #ffa300;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+div.item-page p {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+div.item-page strong, div.blog-featured strong {
+	color: #ffa300;
+	font-weight: 400;
+}
+
+/* Areas of Dev Description */
+
+div.devareas {
+	display: block;
+	margin: auto;
+	max-width: 1252px;
+}
+
+div.area {
+	display: inline-block;
+	width: 401px;
+	height: 363px;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 76px;
+}
+
+div.area:last-child {
+	margin-right: 0;
+}
+
+div.area img {
+	display: block;
+	margin: auto;
+}
+
+div.area div.text {
+	border-right: 1px solid #afafaf;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+div.area div.text h4 {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+div.devareas div.area:last-child div.text {
+	border-right: 0;
+}
+
+/* Content */
+
+div.blog-featured {
+	background-color: #4d4d4d;
+	padding-top: 56px;
+	padding-bottom: 104px;
+}
+
+div.blog-featured div.items-leading {
+	display: block;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+div.blog-featured div.leading-0,div.blog-featured div.leading-1, div.blog-featured div.partnerstxt {
+	display: inline-block;
+	width: 545px;
+	height: 251px;
+	vertical-align: top;
+	margin-bottom: 95px;
+}
+
+div.blog-featured div.leading-0 p,div.blog-featured div.leading-1 p,div.blog-featured div.leading-2 p {
+	margin: 0;
+}
+
+div.blog-featured div.leading-1 img {
+	margin-right: 15px;
+	margin-top: 20px;
+	margin-bottom: 34px;
+}
+
+div.blog-featured div.leading-1 img.lastimg {
+	margin-right: 0;
+}
+
+div.clearfix {
+	display: none;
+}
+
+div.blog-featured div.leading-0, div.blog-featured div.partnerstxt {
+	margin-right: 18px;
+	border-right: 1px solid #afafaf;
+	padding-right: 17px;
+}
+
+div.blog-featured div.partnersimg {
+	display: inline-block;
+	width: 545px;
+	height:251px;
+	vertical-align: top;
+	margin-bottom: 95px;
+}
+
+div.blog-featured div.partnersimg div.img {
+	width: 545px;
+	border-bottom: 1px solid #afafaf;
+	text-align: center;
+	padding-bottom: 30px;
+	margin-top: 10px;
+	margin-bottom: 30px
+}
+
+div.blog-featured div.partnersimg div.img:last-child  {
+	border-bottom: 0;
+}
+
+a.button {
+	display: block;
+	width: 364px;
+	height: 44px;
+	line-height: 44px;
+	vertical-align: middle;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #ffa300;
+	margin: auto;
+}
+
+
+/* Footer */
+
+div.footer {
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
 }

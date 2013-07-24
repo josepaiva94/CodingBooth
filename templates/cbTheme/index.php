@@ -64,20 +64,7 @@ else
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<jdoc:include type="head" />
-	<?php
-	// Use of Google Font
-	if ($this->params->get('googleFont'))
-	{
-	?>
-		<link href='http://fonts.googleapis.com/css?family=<?php echo $this->params->get('googleFontName');?>' rel='stylesheet' type='text/css' />
-		<style type="text/css">
-			h1,h2,h3,h4,h5,h6,.site-title{
-				font-family: '<?php echo str_replace('+', ' ', $this->params->get('googleFontName'));?>', sans-serif;
-			}
-		</style>
-	<?php
-	}
-	?>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
 	<!--[if lt IE 9]>
 		<script src="<?php echo $this->baseurl ?>/media/jui/js/html5.js"></script>
 	<![endif]-->
@@ -95,40 +82,21 @@ else
 	<div class="body">
 		<div class="container<?php echo ($params->get('fluidContainer') ? '-fluid' : '');?>">
 			<!-- Header -->
-			<div class="header">
-				<a href="<?php echo $this->baseurl; ?>">
+			<div class="header container-fluid">
+				<a href="<?php echo $this->baseurl; ?>" class="span6 logolink">
 					<?php echo $logo;?>
 				</a>
-				<div>
-					<jdoc:include type="modules" name="menus" style="none" />
-				</div>
+				<jdoc:include type="modules" name="menus" style="none" />
 			</div>
 			<jdoc:include type="modules" name="banner" style="xhtml" />
 			<div class="row-fluid">
-				<?php if ($this->countModules('position-8')) : ?>
-				<!-- Begin Sidebar -->
-				<div id="sidebar" class="span3">
-					<div class="sidebar-nav">
-						<jdoc:include type="modules" name="position-8" style="xhtml" />
-					</div>
-				</div>
-				<!-- End Sidebar -->
-				<?php endif; ?>
-				<div id="content" class="span9">
+				<div id="content" class="span12">
 					<!-- Begin Content -->
-					<jdoc:include type="modules" name="position-3" style="xhtml" />
+					<jdoc:include type="modules" name="content" style="xhtml" />
 					<jdoc:include type="message" />
-					<jdoc:include type="component" />
-					<jdoc:include type="modules" name="position-2" style="none" />
+					<jdoc:include type="component" style="xhtml" />
 					<!-- End Content -->
 				</div>
-				<?php if ($this->countModules('position-7')) : ?>
-				<div id="aside" class="span3">
-					<!-- Begin Right Sidebar -->
-					<jdoc:include type="modules" name="position-7" style="well" />
-					<!-- End Right Sidebar -->
-				</div>
-				<?php endif; ?>
 			</div>
 		</div>
 	</div>
