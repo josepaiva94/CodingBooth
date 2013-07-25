@@ -104,19 +104,19 @@ else
 	<div class="footer">
 		<?php if ($this->countModules('footer')) : ?>
 			<div class="container-fluid">
-				<div class="span6">
+				<div class="menufooter span6">
 					<!-- Begin Right Sidebar -->
 					<jdoc:include type="modules" name="footer" style="well" />
 					<!-- End Right Sidebar -->
 				</div>
-				<div class="span6">
-					<p>&copy; <?php echo date('Y');?> <?php echo $sitename; ?> - All Rights Reserved - Design by <a href="graphicboost.org" target="_blank">Graphic Boost</a></p>
+				<div class="textfooter span6">
+					&copy; <?php echo date('Y');?> <?php echo $sitename; ?> - All Rights Reserved - Design by <a href="graphicboost.org" target="_blank">Graphic Boost</a>
 				</div>
 			</div>
 		<?php else : ?>
 			<div class="container-fluid">
 				<div class="span12">
-					<p>&copy; <?php echo date('Y');?> <?php echo $sitename; ?> - All Rights Reserved - Design by <a href="http://graphicboost.org" target="_blank">Graphic Boost</a></p>
+					&copy; <?php echo date('Y');?> <?php echo $sitename; ?> - All Rights Reserved - Design by <a href="http://graphicboost.org" target="_blank">Graphic Boost</a>
 				</div>
 			</div>
 		<?php endif; ?>

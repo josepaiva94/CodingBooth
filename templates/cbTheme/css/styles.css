@@ -74,6 +74,8 @@ div.social img {
 	margin-right: 5px;
 }
 
+/* Menus */
+
 ul.menu {
 	width: 40%;
 	display: inline-block;
@@ -257,11 +259,138 @@ a.button {
 	margin: auto;
 }
 
+div.contacttxt {
+	display: inline-block;
+	max-width:440px;
+	margin-right: 18px;
+	border-right: 1px solid #afafaf;
+	padding-right: 17px;
+	vertical-align: top;
+	margin-top: 50px;
+}
+
+div.contactform {
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+	max-width:730px;
+}
+
+/* Portfolio */
+
+div.blog {
+	display: block;
+	max-width: 1180px;
+	margin: auto;
+}
+
+div.portfolio, div.blog div.leading-0, div.blog div.leading-1, div.blog div.leading-2, div.blog div.leading-3, div.blog div.leading-4, div.blog div.leading-5 {
+	width: 364px;
+	height: 478px;
+	background-color: #202020;
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+div.items-leading:last-child div.portfolio {
+	margin-right: 0;
+}
+
+div.portfolio img{
+	width: 364px;
+}
+
+div.portfolio p {
+	margin-left: 20px;
+}
+
+/* Pagination */
+
+p.counter {
+	display: none;
+}
+
+div.pagination {
+	display: block;
+	height: 100px;	
+}
+
+ul.pagination {
+	float: right;
+}
+
+ul.pagination li{
+	display: inline-block;
+	text-decoration: none;
+	margin-right: 20px;
+}
+
+ul.pagination a {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+ul.pagination span {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+ul.pagination li span {
+	margin-right: 0;
+}
 
 /* Footer */
 
 div.footer {
 	max-width: 1280px;
+	min-height: 55px;
+	margin:0;
 	margin-left: auto;
 	margin-right: auto;
+	font-size: 18px;
+	background-color: #2a2a2a;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+div.footer ul.menu {
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+	max-width: 364px;
+}
+
+div.footer ul.menu li {
+	width: 100%;
+}
+
+
+div.footer ul.menu li a {
+	display: inline-block;
+	line-height: 44px;
+	vertical-align: middle;
+	width: 100%;
+	text-align: center;
+}
+
+div.footer div.textfooter {
+	display: inline-block;
+	vertical-align: baseline;
+	float: right;
+	margin-right: 5%;
+	margin-top: 10px;
+	width: 55%;
+	min-width: 215px;
+	text-align: right;
+}
+
+div.footer div.menufooter {
+	display: inline-block;
+	line-height: 44px;
+	vertical-align: middle;
+	float:left;
+	width: 29%;
+	min-width: 115px;
+	margin-left: 5%;
 }

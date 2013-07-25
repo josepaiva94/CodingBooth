@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="file" version="3.0" method="upgrade">
+   <name>TinyMCE - Português de Portugal</name>
+   <version>3.5.6.1</version>
+   <creationDate>2013-04-06</creationDate>
+   <author>Comunidade Portuguesa JoomlaPT!</author>
+   <authorEmail>geral@joomlapt.com</authorEmail>
+   <authorUrl>www.joomlapt.com</authorUrl>
+   <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+   <copyright>(C) 2011 - 2012 Comunidade JoomlaPT Portugal</copyright>
+   <description><![CDATA[
+      <h2>Instalou com sucesso o idioma português de Portugal para TinyMCE 3.5.6 em Joomla</h2>
+      <p>Configurações a efetuar no editor TinyMCE:
+      <ol>
+      <li>Menu Extensões</li>
+      <li>Em Gestor de Plugins escolher o editor TinyMCE
+      <br />ou diretamente aqui: <a href="index.php?option=com_plugins&view=plugins&filter_search=Editor - TinyMCE">Editor - TinyMCE</a></li>
+      <li>No editor, alterar as Opções básicas</li>
+      <li>Funcionalidades :: COMPLETO
+      <br />(Opcional -- se pretende utilizar todos os ícones da barra de ferramentas do TinyMCE)</li>
+      <li>Código de idioma :: pt
+      <br />(em minúsculas, para ativar idioma padrão pt-PT)</li>
+      <li>Seleção automática de idioma :: SIM 
+      <br />(para ativar idiomas por utilizador)</li>
+      </ol>
+      </p>
+      <p>Se pretende utilizar outros idiomas Joomla, para além de Inglês e Português (de Portugal), instale também esses idiomas para TinyMCE.<br />
+      Este é um requisito caso pretenda ativar a "Seleção automática de idioma" no editor.
+      </p>
+      <p></p>
+      <p>Este pacote de idioma é uma produção da <a href="http://www.joomlapt.com" target="_blank" title="Comunidade JoomlaPT">Comunidade JoomlaPT Portugal</a></p>
+      ]]>
+   </description>
+   <!-- Fileset definition -->
+   <fileset>
+      <files target="media/editors">
+         <filename>tinymce/jscripts/tiny_mce/langs/pt.js</filename>
+         <filename>tinymce/jscripts/tiny_mce/plugins/advhr/langs/pt_dlg.js</filename>
+         <filename>tinymce/jscripts/tiny_mce/plugins/advimage/langs/pt_dlg.js</filename>
+         <filename>tinymce/jscripts/tiny_mce/plugins/advlink/langs/pt_dlg.js</filename>
+         <filename>tinymce/jscripts/tiny_mce/plugins/autosave/langs/pt.js</filename>
+         <filename>tinymce/jscripts/tiny_mce/plugins/emotions/langs/pt_dlg.js</filename>
+         <filename>tinymce/jscripts/tiny_mce/plugins/fullpage/langs/pt_dlg.js</filename>
+         <filename>tinymce/jscripts/tiny_mce/plugins/media/langs/pt_dlg.js</filename>
+         <filename>tinymce/jscripts/tiny_mce/plugins/paste/langs/pt_dlg.js</filename>
+         <filename>tinymce/jscripts/tiny_mce/plugins/searchreplace/langs/pt_dlg.js</filename>
+         <filename>tinymce/jscripts/tiny_mce/plugins/style/langs/pt_dlg.js</filename>
+         <filename>tinymce/jscripts/tiny_mce/plugins/table/langs/pt_dlg.js</filename>
+         <filename>tinymce/jscripts/tiny_mce/plugins/template/langs/pt_dlg.js</filename>
+         <filename>tinymce/jscripts/tiny_mce/plugins/xhtmlxtras/langs/pt_dlg.js</filename>
+         <filename>tinymce/jscripts/tiny_mce/themes/advanced/langs/pt.js</filename>
+         <filename>tinymce/jscripts/tiny_mce/themes/advanced/langs/pt_dlg.js</filename>
+         <filename>tinymce/jscripts/tiny_mce/themes/simple/langs/pt.js</filename>
+      </files>
+   </fileset>
+    <updateservers>
+        <server type="collection" priority="1" name="JoomlaPT Community - pt-PT Language Updates">http://update.joomlapt.com/translationlist.xml</server>
+    </updateservers>
+</extension>

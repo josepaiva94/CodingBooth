@@ -1,0 +1,1 @@
+tinyMCE.addI18n('pt.autosave',{restore_content: "Restaurar conteúdo guardado",warning_message: "Se restaurar o conteúdo guardado irá perder todo o conteúdo atualmente no editor.\n\nTem mesmo a certeza de que quer restaurar o conteúdo anteriormente gravado?"});
