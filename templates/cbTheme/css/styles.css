@@ -28,10 +28,9 @@ div.body {
 
 div.header {
 	max-width: 1180px;
-	height: 103px;
 	margin:auto;
-	margin-top: 20px;
-	margin-bottom: 50px;
+	margin-top: 30px;
+	margin-bottom: 10px;
 	text-align: right;
 }
 
@@ -46,8 +45,8 @@ div.grey {
 a.logolink {
 	display: inline-block;
 	float: left;
-	margin-top: 13px;
 	max-width: 100%; 
+	margin-bottom: 40px;
 }
 
 img.logo {
@@ -62,7 +61,6 @@ div.social {
 	height: 34px;
 	margin-bottom: 10px;
 	padding: 0;
-	float: right;
 }
 
 div.social p {
@@ -76,11 +74,61 @@ div.social img {
 
 /* Menus */
 
+div.menus {
+	display: inline-block;
+	height: 86px;
+	position: relative;
+	max-width: 500px;
+}
+
+div.socialmenu {
+	position: relative;
+	text-align: right;
+}
+
+div.mod-languages {
+	display: inline-block;
+	float: left;
+	width: 219px;
+	height: 34px;
+	background-color: #202020;
+}
+
+div.mod-languages li {
+	vertical-align: middle;
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+div.mod-languages a {
+	position: relative;
+}
+
+div.mod-languages ul {
+	height: 100%;
+	line-height: 34px;
+	text-align: center;
+}
+
+ul li.lang-active > a:after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: -18px;
+	left: 50%;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 8px solid #ffa300;
+	margin-left: -10px;
+}
+
 ul.menu {
-	width: 40%;
 	display: inline-block;
 	margin: 0;
 	padding: 0;
+	position: relative;
 }
 
 ul.menu li {
@@ -105,6 +153,8 @@ ul.menu li a {
 ul.menu li.active a {
 	background-color: #ffa300;
 }
+
+
 
 /* Banner */
 
@@ -359,10 +409,12 @@ div.footer ul.menu {
 	height: 100%;
 	width: 100%;
 	max-width: 364px;
+	min-width: 280px;
 }
 
 div.footer ul.menu li {
 	width: 100%;
+	min-width: 280px;
 }
 
 
@@ -375,6 +427,7 @@ div.footer ul.menu li a {
 }
 
 div.footer div.textfooter {
+	position: relative;
 	display: inline-block;
 	vertical-align: baseline;
 	float: right;
@@ -393,4 +446,32 @@ div.footer div.menufooter {
 	width: 29%;
 	min-width: 115px;
 	margin-left: 5%;
+}
+
+/* <1280px */
+
+@media screen and (max-width: 1249px) {
+	div.banner {
+	    display: none;
+	}
+	
+	a.logolink {
+		display: block;
+		float: none;
+		margin: auto;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+	
+	div.menus {
+		height: 86px;
+		position: relative;
+		margin: auto;
+	}
+	
+	div.header {
+		text-align: center;
+	}
+	
+	
 }

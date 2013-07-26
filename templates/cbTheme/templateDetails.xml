@@ -21,6 +21,7 @@
 	</files>
 	<positions>
 		<position>logo</position>
+		<position>social</position>
 		<position>menus</position>
 	    <position>banner</position>
 	    <position>content</position>

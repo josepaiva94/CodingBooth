@@ -86,7 +86,12 @@ else
 				<a href="<?php echo $this->baseurl; ?>" class="span6 logolink">
 					<?php echo $logo;?>
 				</a>
-				<jdoc:include type="modules" name="menus" style="none" />
+				<div class="span6 menus">
+					<div class="socialmenu">
+						<jdoc:include type="modules" name="social" style="none" />
+					</div>
+					<jdoc:include type="modules" name="menus" style="none" />
+				</div>
 			</div>
 			<jdoc:include type="modules" name="banner" style="xhtml" />
 			<div class="row-fluid">
